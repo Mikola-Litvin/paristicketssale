@@ -1,0 +1,33 @@
+footer {
+  width: 100%;
+  
+  background-color: $bg4;
+
+  @media (max-width: 1200px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  & .wrapper {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 249px;
+
+    @media (max-width: 539px) {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 249px;
+    }
+  }
+  
+  & li {
+    font-family: $font2;
+    font-size: 14px;
+    color: $clr7;
+  }
+  
+  & li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

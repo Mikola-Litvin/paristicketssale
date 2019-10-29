@@ -1,0 +1,118 @@
+#about {
+  height: 993px;
+
+  background: url(../assets/images/bg-eiffel2.png) no-repeat 0 0 / cover;
+
+  @media (max-width: 1440px) {
+    height: 851px;
+  }
+
+  @media (max-width: 1366px) {
+    height: 807px;
+  }
+
+  @media (max-width: 1280px) {
+    height: 756px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 605px;
+
+    background-image: url(../assets/images/bg-eiffel-1024.png);
+  }
+
+  @media (max-width: 800px) {
+    height: 473px;
+
+    background-image: url(../assets/images/bg-eiffel-800.png);
+  }
+
+  @media (max-width: 640px) {
+    height: 378px;
+
+    background: url(../assets/images/bg-eiffel-640.png) no-repeat 100% 100% / cover;
+  }
+
+  & .wrapper {
+    @include flex;
+    justify-content: flex-end;
+    padding-top: 228px;
+
+    @media (max-width: 1440px) {
+      padding-top: 157px;
+    }
+
+    @media (max-width: 1366px) {
+      padding-top: 135px;
+    }
+
+    @media (max-width: 1280px) {
+      padding-top: 110px;
+    }
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+      padding-top: 85px;
+    }
+
+    @media (max-width: 800px) {
+      padding-top: 65px;
+    }
+
+    @media (max-width: 640px) {
+      justify-content: flex-end;
+      padding-top: 45px;
+    }
+
+    & div {
+      flex-basis: 656px;
+
+      @media (max-width: 1280px) {
+        flex-basis: 550px;
+      }
+
+      @media (max-width: 1024px) {
+        flex-basis: 750px;
+        padding-left: 350px;
+      }
+
+      @media (max-width: 800px) {
+        flex-basis: 640px;
+        padding-left: 300px;
+      }
+
+      @media (max-width: 640px) {
+        flex-basis: 320px;
+        padding-left: 0;
+      }
+
+      @media (max-width: 480px) {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  & h2 {
+    @include upper;
+    margin-bottom: 37px;
+
+    @media (max-width: 640px) {
+      margin-bottom: 17px;
+    }
+  }
+
+  & p {
+    font-family: $font2;
+    font-size: 24px;
+    line-height: 1.17;
+    color: $clr6;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 800px) {
+      padding-right: 20px;
+    }
+  }
+}
